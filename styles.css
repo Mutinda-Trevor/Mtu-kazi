@@ -1,6 +1,21 @@
-*{
-    background-color:darkcyan
+body{
+    background-color:darkcyan;
    
     
 }
 
+.header-div{
+    margin-left: 700px;
+    justify-content: space-between;
+    
+}
+
+a{
+    color: rgb(192, 158, 8);
+
+}
+nav{
+    background-color: indigo;
+    justify-content: space-between;
+    padding-left: 100px;
+}
