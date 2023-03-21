@@ -4,16 +4,47 @@ body{
     
 }
 
-.header-div{
-    margin-left: 700px;
-    justify-content: space-between;
-    
+span{
+    color: darkcyan;
 }
 
 a{
     color: rgb(192, 158, 8);
+    text-decoration: none;
 
 }
+
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+ul li{
+    
+    margin:15px;
+    padding: 15px;
+}
+
+.sub-menu{
+    display: none;
+
+}
+ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    margin-left: -30px;
+    background: rgb(192, 158, 8);
+    margin-top: 15px;
+}
+    
+.sub-menu1{
+    display: none;
+}
+
+ul li:hover .sub-menu ul li:hover .sub-menu1{
+    display: block;
+}
+
 nav{
     background-color: indigo;
     justify-content: space-between;
