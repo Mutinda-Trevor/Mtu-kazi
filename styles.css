@@ -1,7 +1,5 @@
 body{
     background-color:darkcyan;
-   
-    
 }
 
 span{
@@ -20,7 +18,7 @@ ul{
 }
 
 ul li{
-    
+    border-bottom: 3px solid indigo;
     margin:15px;
     padding: 15px;
 }
