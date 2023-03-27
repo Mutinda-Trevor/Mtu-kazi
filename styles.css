@@ -48,3 +48,8 @@ nav{
     justify-content: space-between;
     padding-left: 100px;
 }
+
+.footer-parag{
+    font-weight: bold;
+    text-align: center;
+}
