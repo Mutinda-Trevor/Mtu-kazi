@@ -1,9 +1,25 @@
-
+form{
+    margin: 30px;
+    border: solid 3px rgb(192, 158, 8);
+    border-radius: 30px;
+}
 .form-para{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     background-color: indigo;
     color: rgb(192, 158, 8);
+    text-align: center;
 }
 
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select{
+    background-color: indigo;
+    margin-left: 30px;
+}
+button{
+    position: absolute;
+}
