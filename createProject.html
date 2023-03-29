@@ -10,27 +10,32 @@
 <body>
     <form action="">
         <p class="form-para">Connect With Top-Rated Contractors near you</p>
-        Kindly provide your personal details <br> <hr>
-        Name <br>
-        <input type="text"> <br>
-        Phone Number <br>
-        <input type="number"> <br>
-        Email <br>
+        <b>Kindly provide your personal details </b>
+        <br> <hr>
+        <b>Name:</b> <br>
+        <input type="text" REQUIRED> <br>
+        <b>Phone Number:</b> <br>
+        <input type="number" REQUIRRED> <br>
+        <b>Email:</b><br>
         <input type="email"> <br> 
-        Project description: <br> <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Provide a brief description of the project"></textarea> <br>
-        Location: <br>
-        <input type="text" placeholder="City/ Town"> <br>
-        <input type="text" placeholder="Locality"><br>
-        When would you like your project to be completed: <br> <br>
+        <b>Project description: </b><br> <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Provide a brief description of the project" REQUIRED></textarea> <br>
+        <b>Location: </b><br>
+        <input type="text" placeholder="City/ Town" REQUIRED> <br>
+        <input type="text" placeholder="Locality" REQUIRED><br>
+        <b>When would you like your project to be completed:</b> <br> <br>
         <select name="" id="">
-            <option value="">immediately</option>
-            <option value="">Within 24 hours</option>
-            <option value="">Timing is flexible</option>
+            <option value="Immediately">Immediately</option>
+            <option value="Within-24-hours">Within 24 hours</option>
+            <option value="Timing-is-flexible">Timing is flexible</option>
         </select>
+        <div class="form-div">
+        <input type="submit">
+        <input type="reset">
+        </div>
         <hr>
-        <a href="index.html"><button>Go back</button></a>
+        
     </form>
-    
+    <a href="./index.html"><button>Go back</button></a>
 </body>
 </html>
