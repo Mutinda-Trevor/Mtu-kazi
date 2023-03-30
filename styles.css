@@ -2,7 +2,6 @@ body{
     background-color:darkcyan;
     min-height: 100vh;
     min-width: 100vw;
-    margin-right: 10px;
 }
 
 span{
@@ -64,8 +63,23 @@ ul li:hover .sub-menu {
     display: none;
 }
 
-ul li:hover .sub-menu ul li:hover .sub-menu1{
+.sub-menu > li:hover .sub-menu1{
     display: block;
+    z-index: -1;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 0;
+    background: rgb(192, 158, 8);
+    border: solid rgb(192, 158, 8) 1px;
+            
+}
+
+.sub-menu > li:hover .mini-menu{
+    margin-left: 170px;
+}
+
+.sub-menu > li:hover .mini-menu1{
+    margin-left: 230px;
 }
 
 nav{
@@ -83,7 +97,7 @@ nav{
 .home-footer{
     position: sticky;
     top: 100%;
-    margin-left: 260px;
+    margin-left: 280px;
 }
 header > ul > a{
     color: black;
