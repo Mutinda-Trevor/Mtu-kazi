@@ -1,5 +1,6 @@
 body{
     background-color:darkcyan;
+    min-height: 100vh;
 }
 
 span{
@@ -52,4 +53,11 @@ nav{
 .footer-parag{
     font-weight: bold;
     text-align: center;
+    font-size: 25px;
+}
+
+.home-footer{
+    position: sticky;
+    top: 100%;
+    margin-left: 260px;
 }
