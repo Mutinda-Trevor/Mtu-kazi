@@ -1,6 +1,8 @@
 body{
     background-color:darkcyan;
     min-height: 100vh;
+    min-width: 100vw;
+    margin-right: 10px;
 }
 
 span{
@@ -23,7 +25,29 @@ ul li{
     margin:15px;
     padding: 15px;
 }
+.header-div{
+    background-color:indigo;
+    border: solid rgb(192, 158, 8) 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
 
+.header-div1 > button{
+    background-color: indigo;
+    border: solid 1px rgb(192, 158, 8);
+    border-radius: 7px;
+    position: relative;
+    left: 83%;
+}
+
+.header-div1 > button > .header-button{
+    color: darkcyan;
+}
+
+header > button{
+    background-color: darkcyan;
+    border-radius: indigo 3px solid;
+}
 .sub-menu{
     display: none;
 
@@ -61,3 +85,7 @@ nav{
     top: 100%;
     margin-left: 260px;
 }
+header > ul > a{
+    color: black;
+}
+
