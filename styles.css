@@ -17,6 +17,7 @@ a{
 ul{
     display: inline-flex;
     list-style: none;
+    border-radius: 30px;
 }
 
 ul li{
@@ -25,10 +26,11 @@ ul li{
     padding: 15px;
 }
 .header-div{
-    background-color:indigo;
+    background-color: silver;
     border: solid rgb(192, 158, 8) 1px;
     border-radius: 10px;
     margin-right: 20px;
+    height: 80px;
 }
 
 .header-div1 > button{
@@ -65,7 +67,7 @@ ul li:hover .sub-menu {
 
 .sub-menu > li:hover .sub-menu1{
     display: block;
-    z-index: -1;
+    z-index: 1;
     position: absolute;
     margin-left: 140px;
     margin-top: 0;
@@ -92,13 +94,18 @@ nav{
     font-weight: bold;
     text-align: center;
     font-size: 25px;
+    margin-bottom: 0;
 }
 
 .home-footer{
     position: sticky;
     top: 100%;
     margin-left: 280px;
+    border: solid 3px rgb(192, 158, 8);
+    border-radius: 30px;
+    background-color: indigo;
 }
+
 header > ul > a{
     color: black;
 }
