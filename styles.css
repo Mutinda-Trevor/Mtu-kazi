@@ -13,15 +13,27 @@ a{
     text-decoration: none;
 }
 
-.hamburger{
-    padding-right: 50%;
+header > ul > a{
+    color: black;
+}
+
+header > ul > a:hover{
+    color: rgb(192, 158, 8);
     cursor: pointer;
+    background-color: indigo;
+}
+
+.hamburger{
+    padding-right: -70%;
+    cursor: pointer;
+    right: 70%;
+    float: right;
 }
 
 .hamburger .line{
     display: block;
-    width: 33px;
-    height: 7px;
+    width: 40px;
+    height: 3px;
     margin-bottom: 10px;
     background-color: silver;
 }    
@@ -34,8 +46,8 @@ ul{
 
 ul li{
     border-bottom: 3px solid indigo;
-    margin:12px;
-    padding: 10px;
+    margin:10px;
+    padding: 15px 15px 15px 0;
 }
 
 .header-div{
@@ -45,7 +57,6 @@ ul li{
     margin-right: 20px;
     margin-left: 3px;
     height: 80px;
-    align-items: center;
 }
 
 .header-div1 > button{
@@ -63,6 +74,29 @@ ul li{
 header > button{
     background-color: darkcyan;
     border-radius: indigo 3px solid;
+}
+
+.hide{
+    display: none;
+}
+
+.home-footer{
+    display: none;
+}
+
+@media  screen and (min-width: 600px) {
+    .header-div1{
+        display: block;
+        position: static;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .home-footer{
+        display: block;
+    }
 }
 
 .sub-menu{
@@ -85,11 +119,17 @@ ul li:hover .sub-menu {
     display: block;
     z-index: 1;
     position: absolute;
-    margin-left: 120px;
+    margin-left: 130px;
     margin-top: -50px;
     background: rgb(192, 158, 8);
-    border: solid indigo 1px;
-                
+    border: solid indigo 1px;     
+}
+
+.sub-menu > li:hover .mini-menu1{
+    position: absolute;
+    display: block;
+    margin-top: -50px;
+    margin-left: 150px;
 }
 
 nav{
@@ -118,12 +158,3 @@ nav{
     background-color: indigo;
 }
 
-header > ul > a{
-    color: black;
-}
-
-header > ul > a:hover{
-    color: rgb(192, 158, 8);
-    cursor: pointer;
-    background-color: indigo;
-}
