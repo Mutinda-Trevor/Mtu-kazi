@@ -1,7 +1,7 @@
 body{
     background-color:darkcyan;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 90vw;
 }
 
 span{
@@ -21,6 +21,12 @@ header > ul > a:hover{
     color: rgb(192, 158, 8);
     cursor: pointer;
     background-color: indigo;
+}
+
+nav{
+    background-color: indigo;
+    justify-content: space-between;
+    padding-left: 100px;
 }
 
 .hamburger{
@@ -64,7 +70,7 @@ ul li{
     border: solid 1px rgb(192, 158, 8);
     border-radius: 7px;
     position: relative;
-    left: 83%;
+    left: 60%;
 }
 
 .header-div1 > button > .header-button{
@@ -84,7 +90,7 @@ header > button{
     display: none;
 }
 
-@media  screen and (min-width: 600px) {
+@media  screen and (min-width: 700px) {
     .header-div1{
         display: block;
         position: static;
@@ -132,29 +138,24 @@ ul li:hover .sub-menu {
     margin-left: 150px;
 }
 
-nav{
-    background-color: indigo;
-    justify-content: space-between;
-    padding-left: 100px;
-}
-
 .footer-parag{
     font-weight: bold;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 0;
 }
 
 .footer-parag1{
     font-weight: bold;
+    
 }
 
 .home-footer{
     position: sticky;
-    top: 100%;
+    max-height: fit-content;
+    top: 90%;
     margin-left: 280px;
     border: solid 3px rgb(192, 158, 8);
-    border-radius: 30px;
     background-color: indigo;
 }
 
