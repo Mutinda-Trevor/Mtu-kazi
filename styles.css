@@ -13,6 +13,12 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-height: 80px;
+    max-width: 100px;
+    margin-left: 10px;
+}
+
 header > ul > a{
     color: black;
 }

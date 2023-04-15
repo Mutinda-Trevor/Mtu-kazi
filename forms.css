@@ -20,6 +20,20 @@ p{
     text-align: center;
 }
 
+img{
+    max-height: 80px;
+    max-width: 100px;
+    margin-left: 10px;
+}
+
+.header-div{
+    background-color: indigo;
+    border-radius: 10px;
+    border: solid rgb(192, 158, 8) 1px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
 .signUp-btn{
     border-bottom: 5px solid indigo;
     border-radius: 10px;
