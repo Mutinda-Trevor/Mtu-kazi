@@ -21,3 +21,38 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
+
+const emailInput = document.getElementById("email").value;
+const passwordInput = document.getElementById("password").value;
+
+const signUpEmailInput = document.getElementById("signUp-email").value;
+const confirmSignUpEmailInput = document.getElementById("comfirm-signUp-email").value;
+const signUpPasswordInput = document.getElementById("signUp-password").value;
+const confirmSignUpPasswordInput = document.getElementById("confirm-signUp-password").value;
+
+const signUpBtn  = document.getElementById("signUp-btn").value;
+const LogInBtn  = document.getElementById("logIn-btn").value;
+
+signUpBtn.addEventListener("click", function() {
+    var isVerified = true;
+
+    if(signUpEmailInput != confirmSignUpEmailInput){
+      window.alert("Email fields do not match");
+      isVerified = false;
+    }
+
+    if(signUpPasswordInput != confirmSignUpPasswordInput){
+      window.alert("Password fields do not match");
+      isVerified = false;
+    }
+
+    if(isVerified){
+      createUserWithEmailAndpassword(auth, signUpEmailInput, signUpPasswordInput).then((userCredantials) => { const user = userCredantials.user
+      window.alert("Account created successfully!");
+    }
+    ).catch((error) => {
+        const errorMessage = error.message;
+        window.alert(errorMessage);
+    });
+    }
+  })
