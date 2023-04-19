@@ -47,12 +47,30 @@ signUpBtn.addEventListener("click", function() {
     }
 
     if(isVerified){
-      createUserWithEmailAndpassword(auth, signUpEmailInput, signUpPasswordInput).then((userCredantials) => { const user = userCredantials.user
+
+      createUserWithEmailAndpassword(auth, signUpEmailInput, signUpPasswordInput).then(
+      (userCredantial) => { const user = userCredantial.user
       window.alert("Account created successfully!");
+      window.location = "./index.html";
     }
     ).catch((error) => {
+        const errorCode = error.code;
         const errorMessage = error.message;
         window.alert(errorMessage);
     });
     }
   })
+
+  LogInBtn.addEventListener("click", function () {
+
+    signInWithEmailAndPassword(auth, emailInput, passwordInput).then(
+      (userCredantial) => { const user = userCredantial.user;
+        window.alert("Log in successful, Welcome back!");
+        window.location = "./index.html";
+      }
+    ).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        window.alert(errorMessage);
+      });
+  });
