@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
     <link rel="stylesheet" href="createProject.css">
     <title>Create Project</title>
 </head>
@@ -13,20 +16,20 @@
         <a href="index.html"> <img src="./images/Logo.png"> </a>
     </div>
     </header>
-    <form action="">
+    <form onsubmit="createProject(event)">
         <p class="form-para">Connect With Top-Rated Contractors near you</p>
         <b>Kindly provide your personal details </b>
         <br> <hr>
         <b>Name:</b> <br>
-        <input type="text" REQUIRED> <br>
+        <input type="text" id ="name" REQUIRED> <br>
         <b>Phone Number:</b> <br>
         <input type="number" REQUIRRED> <br>
         <b>Email:</b><br>
         <input type="email"> <br> 
         <b>Project description: </b><br> <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Provide a brief description of the project" REQUIRED></textarea> <br>
+        <textarea name="" id="" cols="30" rows="10" id ="project" placeholder="Provide a brief description of the project" REQUIRED></textarea> <br>
         <b>Location: </b><br>
-        <input type="text" placeholder="City/ Town" REQUIRED> <br>
+        <input type="text" placeholder="City/ Town" id ="location" REQUIRED> <br>
         <input type="text" placeholder="Locality" REQUIRED><br>
         <b>When would you like your project to be completed:</b> <br> <br>
         <select name="" id="">

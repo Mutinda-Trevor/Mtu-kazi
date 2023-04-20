@@ -58,7 +58,7 @@ signUpBtn.addEventListener("click", function() {
         const errorMessage = error.message;
         window.alert(errorMessage);
     });
-    }
+    };
   })
 
   LogInBtn.addEventListener("click", function () {
