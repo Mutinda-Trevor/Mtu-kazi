@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(125deg, indigo,darkcyan, darkcyan, indigo );
+}
+
+.header-div{
+    background-color: indigo;
+    border-radius: 10px;
+    border: solid rgb(192, 158, 8) 1px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+img{
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 10px;
+}
+
+.user-div{
+    position: auto;
+}

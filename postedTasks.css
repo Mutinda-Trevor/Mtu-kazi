@@ -11,15 +11,15 @@ body{
 }
 
 img{
-    max-height: 80px;
+    max-height: 100px;
     max-width: 100px;
     margin-left: 10px;
 }
 
 span{
-    border: solid 3px rgb(192, 158, 8);
+    border: solid 7px rgb(192, 158, 8);
     padding: 7px;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 div{
@@ -27,9 +27,25 @@ div{
     border-radius: 10px;
     margin: 10px;
     padding-bottom: 7px;
+    background-color: silver;
+}
+
+button{
+    background-color: aqua;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: rgb(192, 158, 8);
+    cursor: pointer;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .total-bidders{
     font-size: 25px;
-    color: aqua;
 }
