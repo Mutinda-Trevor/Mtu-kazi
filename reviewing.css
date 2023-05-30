@@ -19,10 +19,30 @@ img{
 .user-div{
     margin: auto;
     width: 50%; 
+    padding-left: 100px;
+    border-radius: 30px;
+    
 }
 
 .review-div{
-    background-color: bisque;
+    background-color: silver;
     padding-left: 12px;
-    border-radius: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background-color: rgb(192, 158, 8);
+    margin-left: 40%;
+    margin-top: 3px;
+}
+
+button:hover{
+    background-color: red;
 }
